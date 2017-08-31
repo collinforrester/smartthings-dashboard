@@ -1,9 +1,2761 @@
 {
   "devices": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  {
+    "name": "Basement",
+    "type": "Ecobee Sensor",
+    "location": "Home",
+    "networkId": "04",
+    "status": "INACTIVE",
+    "executionLocation": "Cloud"
+  },
+  {
+    "name": "Bedroom Fan",
+    "type": "iHomeSmartPlug-iSP6",
+    "location": "Home",
+    "networkId": "UFWg9s8yVUpHVPw6c5cfkHsb",
+    "status": "OFFLINE",
+    "executionLocation": "Cloud"
+  },
+  {
+    "name": "Collin Forrester's Android",
+    "type": "Mobile Presence",
+    "location": "Home",
+    "networkId": "collin.forrester@gmail.com|5d8e8832-027f-4fd7-b36b-94394fd21d16|9e927d0dfa615f0c",
+    "status": "INACTIVE",
+    "executionLocation": "Cloud"
+  },
+  {
+    "name": "Front Door",
+    "type": "SmartSense Multi Sensor",
+    "location": "Home",
+    "networkId": "53BA",
+    "status": "OFFLINE",
+    "executionLocation": "Local"
+  },
+  {
+    "name": "Kitchen Cabinet Lights",
+    "type": "Z-Wave Switch",
+    "location": "Home",
+    "networkId": "02",
+    "status": "ONLINE",
+    "executionLocation": "Local"
+  },
+  {
+    "name": "Outdoor Garage Lights",
+    "type": "Z-Wave Switch",
+    "location": "Home",
+    "networkId": "03",
+    "status": "ONLINE",
+    "executionLocation": "Local"
+  },
+  {
+    "name": "Shauna's iPhone",
+    "type": "Mobile Presence",
+    "location": "Home",
+    "networkId": "shauna.forrester1@gmail.com|5d8e8832-027f-4fd7-b36b-94394fd21d16|2AB7E32E-3C64-4C5A-9A01-A84442571A02",
+    "status": "ACTIVE",
+    "executionLocation": "Cloud"
+  },
+  {
+    "name": "Thermostat",
+    "type": "Ecobee Thermostat",
+    "location": "Home",
+    "networkId": "6a0c658b-7cd9-44a2-a039-32edc9f05c77.315680051656",
+    "status": "ONLINE",
+    "executionLocation": "Cloud"
+  }
+],
+  "events": [
+
+    {
+      "date": "2017-08-30 6:51:02.169 AM CDT\n\t\t\t\t\t14 hours ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-29 10:15:26.455 PM CDT\n\t\t\t\t\t23 hours ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-29 5:57:06.349 PM CDT\n\t\t\t\t\t1 day ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "refresh",
+      "text": "Amazon Alexa sent refresh command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-29 6:50:32.380 AM CDT\n\t\t\t\t\t2 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-29 3:57:06.375 AM CDT\n\t\t\t\t\t2 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "refresh",
+      "text": "Amazon Alexa sent refresh command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-28 10:15:09.486 PM CDT\n\t\t\t\t\t2 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-28 6:50:38.665 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-27 10:15:08.446 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-27 6:48:26.243 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-26 10:15:03.119 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-26 6:48:47.692 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-25 10:15:19.070 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-25 6:43:21.502 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-24 10:15:11.591 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-24 6:44:09.353 AM CDT\n\t\t\t\t\t7 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    },
+    {
+      "date": "2017-08-23 10:15:17.142 PM CDT\n\t\t\t\t\t7 days ago",
+      "source": "5f4d3818-da4b-44a9-a12b-bb9860c47ca2",
+      "name": "",
+      "value": "off",
+      "text": "IFTTT sent off command to Outdoor Garage Lights"
+    }
+
+
+
+
+
+
+    ,
+    {
+      "date": "2017-08-30 5:24:56.808 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-30 9:36:06.702 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-29 8:41:20.974 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-29 6:52:29.132 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-29 6:32:22.612 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-29 11:25:13.302 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-29 10:16:42.613 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-29 9:17:16.074 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-29 9:16:59.764 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-29 9:16:54.504 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-28 5:59:33.460 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-28 5:18:37.012 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-28 4:47:17.393 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-28 3:09:27.435 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-28 2:41:05.579 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-28 10:43:37.195 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-27 8:48:19.918 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-27 2:13:04.471 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-27 12:30:46.547 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-26 4:04:24.977 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-26 2:07:34.301 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-26 8:05:53.128 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-25 8:22:55.771 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-25 6:27:55.305 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-25 6:11:09.126 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-25 4:01:53.415 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-25 3:34:20.089 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-25 10:57:57.175 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-24 7:26:20.714 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-24 3:49:28.186 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    },
+    {
+      "date": "2017-08-24 3:17:00.651 PM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "present",
+      "text": "Shauna's iPhone has arrived"
+    },
+    {
+      "date": "2017-08-24 11:52:47.450 AM CDT",
+      "source": "6ea471bc-28b0-48fd-ad41-aaa413435350",
+      "name": "presence",
+      "value": "not present",
+      "text": "Shauna's iPhone has left"
+    }
+
+
+
+
+
+
+    , {
+      "date": "2017-08-30 5:57:10.459 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-30 9:21:59.686 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-30 8:29:58.032 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-30 7:01:00.528 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-30 6:21:47.043 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-29 9:23:14.823 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-29 8:51:19.143 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-29 8:56:58.577 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-29 8:47:02.392 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-28 9:53:39.397 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-28 5:41:59.670 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-28 10:39:23.253 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-28 9:23:55.960 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-27 11:49:22.260 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-27 10:40:16.954 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-26 10:39:40.235 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-26 7:31:44.093 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-25 6:24:12.694 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-25 6:12:01.654 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-25 3:59:10.348 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-25 3:39:37.533 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-25 10:55:47.394 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-25 8:24:31.921 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-24 10:11:24.225 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-24 7:48:27.948 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-24 11:49:57.241 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-24 10:00:57.114 AM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "on",
+      "text": "Kitchen Cabinet Lights switch is on"
+    },
+    {
+      "date": "2017-08-23 10:17:05.657 PM CDT",
+      "source": "884939d4-796f-41a8-9c96-330af2fa378d",
+      "name": "switch",
+      "value": "off",
+      "text": "Kitchen Cabinet Lights switch is off"
+    },
+    {
+      "date": "2017-08-30 8:23:38.902 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-30 7:23:38.752 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-30 6:23:38.808 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-30 5:23:39.689 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-30 4:11:17.902 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-30 4:03:38.890 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-30 3:26:17.862 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-30 3:03:38.698 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-30 1:33:38.852 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-30 11:03:38.803 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "75",
+      "text": "Thermostat thermostat setpoint is 75°F"
+    },
+    {
+      "date": "2017-08-30 11:03:38.718 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-30 11:03:38.679 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-30 10:33:38.844 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "78",
+      "text": "Thermostat thermostat setpoint is 78°F"
+    },
+    {
+      "date": "2017-08-30 10:33:38.753 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-30 10:33:38.711 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-30 10:26:17.822 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 10:23:38.890 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "69",
+      "text": "Thermostat temperature is 69 F"
+    },
+    {
+      "date": "2017-08-30 9:56:17.893 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 9:33:38.792 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "69",
+      "text": "Thermostat temperature is 69 F"
+    },
+    {
+      "date": "2017-08-30 9:26:17.809 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 8:48:38.772 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "69",
+      "text": "Thermostat temperature is 69 F"
+    },
+    {
+      "date": "2017-08-30 8:33:38.988 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 8:28:39.055 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-30 8:28:39.024 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "74",
+      "text": "Thermostat thermostat setpoint is 74°F"
+    },
+    {
+      "date": "2017-08-30 8:28:38.939 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "74",
+      "text": "heating setpoint is 74 F"
+    },
+    {
+      "date": "2017-08-30 8:28:38.902 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "74",
+      "text": "cooling setpoint is 74 F"
+    },
+    {
+      "date": "2017-08-30 8:26:18.014 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-30 8:26:17.889 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-30 5:18:38.950 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-30 5:18:38.824 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 5:11:17.911 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-30 5:11:17.781 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-30 2:58:39.046 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-30 2:58:38.910 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 2:43:38.802 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-30 2:43:38.692 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-30 1:18:38.851 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-30 1:18:38.713 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-30 12:56:17.877 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-30 12:56:17.765 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 11:23:39.012 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-29 11:23:38.862 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 11:03:38.821 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-29 11:03:38.698 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 10:03:38.687 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "70",
+      "text": "Thermostat thermostat setpoint is 70°F"
+    },
+    {
+      "date": "2017-08-29 10:03:38.607 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-29 10:03:38.571 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-29 9:08:38.868 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 8:41:18.764 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 7:56:17.710 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-29 7:08:38.907 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-29 6:26:17.659 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-29 5:43:38.839 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-29 5:18:38.909 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-29 4:33:38.831 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-29 3:38:38.734 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-29 2:13:39.666 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 2:11:17.729 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 1:38:38.817 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 12:28:38.929 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 11:03:39.050 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "75",
+      "text": "Thermostat thermostat setpoint is 75°F"
+    },
+    {
+      "date": "2017-08-29 11:03:38.951 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-29 11:03:38.894 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-29 10:03:39.062 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "78",
+      "text": "Thermostat thermostat setpoint is 78°F"
+    },
+    {
+      "date": "2017-08-29 10:03:38.973 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-29 10:03:38.678 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-29 9:03:39.033 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "75",
+      "text": "Thermostat thermostat setpoint is 75°F"
+    },
+    {
+      "date": "2017-08-29 9:03:38.941 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-29 9:03:38.897 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-29 8:48:38.662 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "69",
+      "text": "Thermostat temperature is 69 F"
+    },
+    {
+      "date": "2017-08-29 8:11:17.840 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-29 8:11:17.714 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 7:58:38.913 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-29 7:58:38.762 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 4:33:39.043 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-29 4:33:38.921 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 4:18:38.931 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-29 4:18:38.801 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 2:58:38.963 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-29 2:58:38.620 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 2:43:38.986 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-29 2:43:38.592 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-29 1:23:38.913 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-29 1:23:38.805 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-29 1:08:38.844 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-29 1:08:38.699 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 11:53:38.828 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 11:53:38.714 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 11:41:17.826 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 11:41:17.699 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 10:33:38.826 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 10:33:38.688 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 10:08:38.747 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 10:08:38.632 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 10:03:38.755 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "70",
+      "text": "Thermostat thermostat setpoint is 70°F"
+    },
+    {
+      "date": "2017-08-28 10:03:38.634 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-28 10:03:38.584 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-28 9:41:17.635 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 8:33:38.904 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 7:41:17.883 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-28 6:53:38.717 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-28 4:53:38.836 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-28 2:53:38.639 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-28 1:28:38.693 PM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-28 11:23:38.675 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 11:11:17.931 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 11:08:38.683 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 11:03:38.816 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "75",
+      "text": "Thermostat thermostat setpoint is 75°F"
+    },
+    {
+      "date": "2017-08-28 11:03:38.690 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-28 11:03:38.641 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-28 10:58:38.657 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 10:18:38.739 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 10:03:38.991 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "78",
+      "text": "Thermostat thermostat setpoint is 78°F"
+    },
+    {
+      "date": "2017-08-28 10:03:38.875 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-28 10:03:38.817 AM CDT",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-28 7:28:38.959 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 7:28:38.843 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 7:13:38.704 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 7:13:38.591 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 5:03:38.771 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 5:03:38.641 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 4:53:38.766 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 4:53:38.646 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 3:41:17.857 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 3:41:17.708 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 3:23:39.004 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 3:23:38.868 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 2:08:38.779 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 2:08:38.643 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 1:53:38.787 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 1:53:38.659 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-28 12:38:38.864 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-28 12:38:38.755 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-28 12:18:38.819 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-28 12:18:38.688 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 11:03:38.716 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 11:03:38.602 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 10:48:38.789 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 10:48:38.641 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 10:03:39.097 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "70",
+      "text": "Thermostat thermostat setpoint is 70°F"
+    },
+    {
+      "date": "2017-08-27 10:03:38.978 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-27 10:03:38.682 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-27 8:28:38.905 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 7:53:38.660 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 7:08:38.642 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-27 6:38:38.696 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-27 5:38:38.660 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-27 5:08:38.639 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-27 4:26:18.005 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-27 3:11:17.693 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-27 3:03:38.684 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-27 2:23:38.637 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-27 2:03:38.716 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-27 1:23:38.612 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 12:38:38.681 PM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-27 11:11:17.898 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 11:03:38.650 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "75",
+      "text": "Thermostat thermostat setpoint is 75°F"
+    },
+    {
+      "date": "2017-08-27 11:03:38.557 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-27 11:03:38.516 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-27 10:03:38.730 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "78",
+      "text": "Thermostat thermostat setpoint is 78°F"
+    },
+    {
+      "date": "2017-08-27 10:03:38.637 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-27 10:03:38.596 AM CDT\n\t\t\t\t\t3 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-27 8:18:38.840 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 8:18:38.677 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 8:03:38.795 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 8:03:38.648 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 6:53:38.790 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 6:53:38.644 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 6:38:38.894 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 6:38:38.757 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 5:38:38.814 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 5:38:38.643 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 5:18:38.733 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 5:18:38.622 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 4:08:38.895 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 4:08:38.720 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 3:53:38.876 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 3:53:38.726 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 2:53:38.764 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 2:53:38.625 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 2:38:38.787 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 2:38:38.656 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-27 1:33:38.784 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-27 1:33:38.660 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-27 1:08:38.884 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-27 1:08:38.757 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-26 10:11:17.963 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-26 10:11:17.831 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.789 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.759 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "70",
+      "text": "Thermostat thermostat setpoint is 70°F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.671 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.633 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-26 9:18:38.645 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-26 8:26:17.675 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-26 7:23:38.636 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-26 6:08:38.575 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-26 5:43:38.672 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-26 4:48:38.619 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-26 3:53:38.622 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-26 3:38:38.696 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-26 2:33:38.838 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-26 2:03:38.638 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-26 1:23:38.854 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "75",
+      "text": "Thermostat thermostat setpoint is 75°F"
+    },
+    {
+      "date": "2017-08-26 1:23:38.710 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-26 1:23:38.650 PM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-26 11:53:38.985 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-26 11:53:38.840 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-26 11:23:38.787 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 71 F",
+      "text": "Thermostat thermostat status is Cooling to 71 F"
+    },
+    {
+      "date": "2017-08-26 11:23:38.754 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "71",
+      "text": "Thermostat thermostat setpoint is 71°F"
+    },
+    {
+      "date": "2017-08-26 11:23:38.681 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatMode",
+      "value": "cool",
+      "text": "thermostat mode is cool"
+    },
+    {
+      "date": "2017-08-26 11:23:38.646 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "71",
+      "text": "heating setpoint is 71 F"
+    },
+    {
+      "date": "2017-08-26 11:23:38.634 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-26 11:23:38.597 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "71",
+      "text": "cooling setpoint is 71 F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.754 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "72",
+      "text": "Thermostat thermostat setpoint is 72°F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.654 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-26 10:03:38.611 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-26 9:53:38.636 AM CDT\n\t\t\t\t\t4 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-26 7:11:18.116 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Off",
+      "text": "Thermostat thermostat status is Right Now: Off"
+    },
+    {
+      "date": "2017-08-26 7:11:17.890 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "67.5",
+      "text": "Thermostat thermostat setpoint is 67.5°F"
+    },
+    {
+      "date": "2017-08-26 7:11:17.830 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatMode",
+      "value": "off",
+      "text": "thermostat mode is off"
+    },
+    {
+      "date": "2017-08-26 7:08:38.777 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-26 7:08:38.643 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-26 6:33:38.963 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-26 6:33:38.802 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-26 4:18:38.740 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Right Now: Idle",
+      "text": "Thermostat thermostat status is Right Now: Idle"
+    },
+    {
+      "date": "2017-08-26 4:18:38.613 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "70",
+      "text": "Thermostat temperature is 70 F"
+    },
+    {
+      "date": "2017-08-26 3:18:38.816 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "71",
+      "text": "Thermostat temperature is 71 F"
+    },
+    {
+      "date": "2017-08-26 2:38:39.046 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "72",
+      "text": "Thermostat temperature is 72 F"
+    },
+    {
+      "date": "2017-08-26 1:48:38.763 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-26 1:08:38.843 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-26 12:18:38.785 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-25 11:43:38.853 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 70 F",
+      "text": "Thermostat thermostat status is Cooling to 70 F"
+    },
+    {
+      "date": "2017-08-25 11:43:38.820 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "70",
+      "text": "Thermostat thermostat setpoint is 70°F"
+    },
+    {
+      "date": "2017-08-25 11:43:38.710 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-25 11:43:38.659 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-25 11:41:17.663 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-25 11:26:17.790 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-25 11:11:17.811 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-25 10:33:38.652 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-25 9:56:17.779 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-25 9:43:38.758 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatStatus",
+      "value": "Cooling to 71 F",
+      "text": "Thermostat thermostat status is Cooling to 71 F"
+    },
+    {
+      "date": "2017-08-25 9:43:38.730 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "71",
+      "text": "Thermostat thermostat setpoint is 71°F"
+    },
+    {
+      "date": "2017-08-25 9:43:38.673 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatMode",
+      "value": "cool",
+      "text": "thermostat mode is cool"
+    },
+    {
+      "date": "2017-08-25 9:43:38.644 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "71",
+      "text": "heating setpoint is 71 F"
+    },
+    {
+      "date": "2017-08-25 9:43:38.604 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "71",
+      "text": "cooling setpoint is 71 F"
+    },
+    {
+      "date": "2017-08-25 9:13:38.666 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-25 8:38:38.606 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-25 8:08:38.734 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-25 7:38:38.789 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-25 7:11:17.984 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-25 5:03:38.838 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "71.5",
+      "text": "Thermostat thermostat setpoint is 71.5°F"
+    },
+    {
+      "date": "2017-08-25 5:03:38.750 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-25 5:03:38.711 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-25 4:38:38.754 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-25 4:23:38.684 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-25 4:18:38.611 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-25 3:56:17.774 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-25 3:33:38.698 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-25 3:26:17.642 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "79",
+      "text": "Thermostat temperature is 79 F"
+    },
+    {
+      "date": "2017-08-25 3:23:38.618 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-25 3:18:38.578 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "79",
+      "text": "Thermostat temperature is 79 F"
+    },
+    {
+      "date": "2017-08-25 2:58:38.835 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-25 2:43:38.678 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-25 2:03:38.658 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-25 12:58:38.723 PM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-25 10:43:38.630 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-25 10:41:17.682 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-25 10:03:38.685 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "72",
+      "text": "Thermostat thermostat setpoint is 72°F"
+    },
+    {
+      "date": "2017-08-25 10:03:38.585 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-25 10:03:38.545 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-25 9:48:38.659 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-25 9:18:38.678 AM CDT\n\t\t\t\t\t5 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-25 8:03:38.615 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-25 4:23:38.690 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-24 11:48:38.677 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-24 10:03:38.824 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "67.5",
+      "text": "Thermostat thermostat setpoint is 67.5°F"
+    },
+    {
+      "date": "2017-08-24 10:03:38.700 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-24 10:03:38.645 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-24 9:53:38.622 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-24 9:38:38.932 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-24 9:26:17.644 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-24 9:18:38.817 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-24 9:11:17.827 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-24 5:43:38.690 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-24 5:41:17.647 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "79",
+      "text": "Thermostat temperature is 79 F"
+    },
+    {
+      "date": "2017-08-24 5:03:38.768 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "71.5",
+      "text": "Thermostat thermostat setpoint is 71.5°F"
+    },
+    {
+      "date": "2017-08-24 5:03:38.661 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "68",
+      "text": "heating setpoint is 68 F"
+    },
+    {
+      "date": "2017-08-24 5:03:38.619 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "75",
+      "text": "cooling setpoint is 75 F"
+    },
+    {
+      "date": "2017-08-24 3:43:38.625 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "78",
+      "text": "Thermostat temperature is 78 F"
+    },
+    {
+      "date": "2017-08-24 2:56:17.631 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    },
+    {
+      "date": "2017-08-24 1:43:38.602 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-24 1:13:38.753 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-24 1:11:17.993 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-24 12:18:38.624 PM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-24 10:48:38.706 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-24 10:03:38.704 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "72",
+      "text": "Thermostat thermostat setpoint is 72°F"
+    },
+    {
+      "date": "2017-08-24 10:03:38.604 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "66",
+      "text": "heating setpoint is 66 F"
+    },
+    {
+      "date": "2017-08-24 10:03:38.543 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "78",
+      "text": "cooling setpoint is 78 F"
+    },
+    {
+      "date": "2017-08-24 9:38:38.791 AM CDT\n\t\t\t\t\t6 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "73",
+      "text": "Thermostat temperature is 73 F"
+    },
+    {
+      "date": "2017-08-24 7:26:17.660 AM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "74",
+      "text": "Thermostat temperature is 74 F"
+    },
+    {
+      "date": "2017-08-24 5:23:38.656 AM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "75",
+      "text": "Thermostat temperature is 75 F"
+    },
+    {
+      "date": "2017-08-23 10:04:30.760 PM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "thermostatSetpoint",
+      "value": "67.5",
+      "text": "Thermostat thermostat setpoint is 67.5°F"
+    },
+    {
+      "date": "2017-08-23 10:04:28.852 PM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "heatingSetpoint",
+      "value": "65",
+      "text": "heating setpoint is 65 F"
+    },
+    {
+      "date": "2017-08-23 10:04:28.426 PM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "coolingSetpoint",
+      "value": "70",
+      "text": "cooling setpoint is 70 F"
+    },
+    {
+      "date": "2017-08-23 9:48:38.959 PM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "76",
+      "text": "Thermostat temperature is 76 F"
+    },
+    {
+      "date": "2017-08-23 9:08:38.741 PM CDT\n\t\t\t\t\t7 days ago",
+      "source": "8c1ccdf8-f86c-4fdb-ace4-197deea4e204",
+      "name": "temperature",
+      "value": "77",
+      "text": "Thermostat temperature is 77 F"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }

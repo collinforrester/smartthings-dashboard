@@ -109,7 +109,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<md-toolbar color=\"primary\">\n  <span>Application Title</span>\n\n  <!-- This fills the remaining space of the current row -->\n  <span class=\"example-fill-remaining-space\"></span>\n\n  <span>\n    <md-menu #appMenu=\"mdMenu\">\n      <button md-menu-item [routerLink]=\"['/devices']\"> Devices </button>\n      <button md-menu-item [routerLink]=\"['/about']\"> About </button>\n    </md-menu>\n\n    <button md-icon-button [mdMenuTriggerFor]=\"appMenu\">\n      Menu\n      <md-icon>more_vert</md-icon>\n    </button>\n  </span>\n</md-toolbar>\n\n<router-outlet></router-outlet>\n\n"
+module.exports = "<header class=\"navbar navbar-light navbar-fixed-top navbar-expand-lg\">\n\n  <a class=\"navbar-brand\" [routerLink]=\"['/']\" (click)=\"navbarCollapsed = true\">SmartThings</a>\n\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" (click)=\"navbarCollapsed = !navbarCollapsed\"\n          [attr.aria-expanded]=\"!navbarCollapsed\" aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse\" [ngbCollapse]=\"navbarCollapsed\" id=\"navbarContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/devices']\" (click)=\"navbarCollapsed = true\">Devices</a>\n      </li>\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\" (click)=\"navbarCollapsed = true\">About</a>\n      </li>\n    </ul>\n  </div>\n</header>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
@@ -139,10 +139,10 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
         this.cache.set('cached', true);
-        this.devices = this.http.get('http://localhost:8000/devices')
-            .map(function (devices) {
-            return devices.map(function (d) { return d.id + " - " + d.title + " (" + d.author + ")"; }).join(',');
-        });
+        // this.devices = this.http.get('http://localhost:8000/devices')
+        //   .map(devices => {
+        //     return devices.map(d => `${d.id} - ${d.title} (${d.author})`).join(',');
+        //   });
     };
     return AppComponent;
 }());
@@ -172,6 +172,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var service_module_1 = __webpack_require__("../../../../../src/app/service/service.module.ts");
 var core_1 = __webpack_require__("@angular/core");
 var common_1 = __webpack_require__("@angular/common");
 var app_component_1 = __webpack_require__("../../../../../src/app/app.component.ts");
@@ -180,8 +181,7 @@ var router_1 = __webpack_require__("@angular/router");
 // import { HomeView } from './home/home-view.component';
 var transfer_http_module_1 = __webpack_require__("../../../../../src/modules/transfer-http/transfer-http.module.ts");
 var home_component_1 = __webpack_require__("../../../../../src/app/home/home.component.ts");
-var custom_app_material_module_1 = __webpack_require__("../../../../../src/app/custom-app-material/custom-app-material.module.ts");
-var animations_1 = __webpack_require__("@angular/platform-browser/animations");
+var ng_bootstrap_1 = __webpack_require__("@ng-bootstrap/ng-bootstrap");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -198,13 +198,12 @@ AppModule = __decorate([
             common_1.CommonModule,
             http_1.HttpModule,
             transfer_http_module_1.TransferHttpModule,
+            service_module_1.ServiceModule,
             router_1.RouterModule.forRoot([
-                { path: '', component: app_component_1.AppComponent, pathMatch: 'full' },
-                { path: 'home', component: home_component_1.HomeComponent, pathMatch: 'full' }
+                { path: '', component: home_component_1.HomeComponent, pathMatch: 'full' }
                 // { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule'}
             ]),
-            custom_app_material_module_1.CustomAppMaterialModule,
-            animations_1.NoopAnimationsModule
+            ng_bootstrap_1.NgbModule.forRoot()
         ],
         providers: [],
         exports: [
@@ -279,49 +278,6 @@ exports.AppServerModule = AppServerModule;
 
 /***/ }),
 
-/***/ "../../../../../src/app/custom-app-material/custom-app-material.module.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("@angular/core");
-var common_1 = __webpack_require__("@angular/common");
-var material_1 = __webpack_require__("@angular/material");
-var CustomAppMaterialModule = (function () {
-    function CustomAppMaterialModule() {
-    }
-    return CustomAppMaterialModule;
-}());
-CustomAppMaterialModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            material_1.MdButtonModule,
-            material_1.MdCheckboxModule,
-            material_1.MdMenuModule,
-            material_1.MdIconModule
-        ],
-        exports: [
-            material_1.MdButtonModule,
-            material_1.MdCheckboxModule,
-            material_1.MdMenuModule,
-            material_1.MdIconModule
-        ],
-        declarations: []
-    })
-], CustomAppMaterialModule);
-exports.CustomAppMaterialModule = CustomAppMaterialModule;
-//# sourceMappingURL=custom-app-material.module.js.map
-
-/***/ }),
-
 /***/ "../../../../../src/app/home/home.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -343,7 +299,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  home works!\n</p>\n\n\n    <a routerLink=\"/\">Root</a>\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col-sm\">\n    {{devices | async}}\n  </div>\n  <div class=\"col-sm\">\n    Home Works!\n  </div>\n</div>"
 
 /***/ }),
 
@@ -362,11 +318,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var device_service_1 = __webpack_require__("../../../../../src/app/service/device.service.ts");
 var core_1 = __webpack_require__("@angular/core");
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(DeviceService) {
+        this.DeviceService = DeviceService;
     }
     HomeComponent.prototype.ngOnInit = function () {
+        this.devices = this.DeviceService.getDevices()
+            .map(function (devices) {
+            return devices.map(function (d) { return d.id + " - " + d.title + " (" + d.author + ")"; }).join(',');
+        });
     };
     return HomeComponent;
 }());
@@ -376,10 +338,82 @@ HomeComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof device_service_1.DeviceService !== "undefined" && device_service_1.DeviceService) === "function" && _a || Object])
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
+var _a;
 //# sourceMappingURL=home.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/service/device.service.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("@angular/core");
+var transfer_http_1 = __webpack_require__("../../../../../src/modules/transfer-http/transfer-http.ts");
+var urlBase = 'http://localhost:8000';
+var DeviceService = (function () {
+    function DeviceService(http) {
+        this.http = http;
+    }
+    DeviceService.prototype.getDevices = function () {
+        return this.http.get(urlBase + "/api/devices");
+    };
+    return DeviceService;
+}());
+DeviceService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [typeof (_a = typeof transfer_http_1.TransferHttp !== "undefined" && transfer_http_1.TransferHttp) === "function" && _a || Object])
+], DeviceService);
+exports.DeviceService = DeviceService;
+var _a;
+//# sourceMappingURL=device.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/service/service.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("@angular/core");
+var common_1 = __webpack_require__("@angular/common");
+var device_service_1 = __webpack_require__("../../../../../src/app/service/device.service.ts");
+var ServiceModule = (function () {
+    function ServiceModule() {
+    }
+    return ServiceModule;
+}());
+ServiceModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule
+        ],
+        declarations: [],
+        providers: [device_service_1.DeviceService]
+    })
+], ServiceModule);
+exports.ServiceModule = ServiceModule;
+//# sourceMappingURL=service.module.js.map
 
 /***/ }),
 
@@ -398,6 +432,7 @@ var express_engine_1 = __webpack_require__("@nguniversal/express-engine");
 var routes_1 = __webpack_require__("../../../../../src/routes.ts");
 var app_1 = __webpack_require__("../../../../../src/api/app.ts");
 var core_1 = __webpack_require__("@angular/core");
+var jsonServer = __webpack_require__("json-server");
 core_1.enableProdMode();
 var app = express();
 var api = new app_1.App();
@@ -419,11 +454,7 @@ routes_1.ROUTES.forEach(function (route) {
         console.timeEnd("GET: " + req.originalUrl);
     });
 });
-app.get('/devices', function (req, res) {
-    console.time("GET: " + req.originalUrl);
-    res.json(api.getDevices());
-    console.timeEnd("GET: " + req.originalUrl);
-});
+app.use('/api', jsonServer.router('/Users/collin/code/hdc/smartthings-dashboard/src/api/db.json'));
 app.listen(8000, function () {
     console.log("Listening at " + baseUrl);
 });
@@ -908,24 +939,10 @@ module.exports = require("@angular/http");
 
 /***/ }),
 
-/***/ "@angular/material":
-/***/ (function(module, exports) {
-
-module.exports = require("@angular/material");
-
-/***/ }),
-
 /***/ "@angular/platform-browser":
 /***/ (function(module, exports) {
 
 module.exports = require("@angular/platform-browser");
-
-/***/ }),
-
-/***/ "@angular/platform-browser/animations":
-/***/ (function(module, exports) {
-
-module.exports = require("@angular/platform-browser/animations");
 
 /***/ }),
 
@@ -943,6 +960,13 @@ module.exports = require("@angular/router");
 
 /***/ }),
 
+/***/ "@ng-bootstrap/ng-bootstrap":
+/***/ (function(module, exports) {
+
+module.exports = require("@ng-bootstrap/ng-bootstrap");
+
+/***/ }),
+
 /***/ "@nguniversal/express-engine":
 /***/ (function(module, exports) {
 
@@ -954,6 +978,13 @@ module.exports = require("@nguniversal/express-engine");
 /***/ (function(module, exports) {
 
 module.exports = require("express");
+
+/***/ }),
+
+/***/ "json-server":
+/***/ (function(module, exports) {
+
+module.exports = require("json-server");
 
 /***/ }),
 

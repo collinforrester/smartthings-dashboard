@@ -8,6 +8,8 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 import { ROUTES } from './routes';
 import { App } from './api/app';
 import { enableProdMode } from '@angular/core';
+
+import * as jsonServer from 'json-server';
 enableProdMode();
 const app = express();
 const api = new App();
@@ -34,11 +36,7 @@ ROUTES.forEach(route => {
   });
 });
 
-app.get('/devices', (req, res) => {
-  console.time(`GET: ${req.originalUrl}`);
-  res.json(api.getDevices());
-  console.timeEnd(`GET: ${req.originalUrl}`);
-});
+app.use('/api', jsonServer.router('/Users/collin/code/hdc/smartthings-dashboard/src/api/db.json'));
 
 app.listen(8000, () => {
   console.log(`Listening at ${baseUrl}`);

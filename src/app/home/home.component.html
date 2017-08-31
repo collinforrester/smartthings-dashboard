@@ -1,6 +1,48 @@
-<p>
-  home works!
-</p>
+<div class="row">
+  <div class="col-sm">
+    <div class="form-group">
+      <label for="typeahead-http">Search for a device:</label>
+      <input id="typeahead-http" type="text" class="form-control" [class.is-invalid]="searchFailed" [(ngModel)]="model" [ngbTypeahead]="search"
+        placeholder="Wikipedia search" />
+      <span *ngIf="searching">searching...</span>
+      <div class="invalid-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>
+    </div>
 
-
-    <a routerLink="/">Root</a>
+    <hr>
+    <pre>Model: {{ model | json }}</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <table class="table table-inverse">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Last Event On</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

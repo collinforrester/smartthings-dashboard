@@ -15,9 +15,9 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
     this.cache.set('cached', true);
-    this.devices = this.http.get('http://localhost:8000/devices')
-      .map(devices => {
-        return devices.map(d => `${d.id} - ${d.title} (${d.author})`).join(',');
-      });
+    // this.devices = this.http.get('http://localhost:8000/devices')
+    //   .map(devices => {
+    //     return devices.map(d => `${d.id} - ${d.title} (${d.author})`).join(',');
+    //   });
   }
 }
