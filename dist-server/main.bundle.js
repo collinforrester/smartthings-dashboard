@@ -261,7 +261,8 @@ AppServerModule = __decorate([
                     core_1.ApplicationRef,
                     transfer_state_1.TransferState
                 ]
-            }
+            },
+            { provide: 'ORIGIN_URL', useValue: 'http://localhost:8000' }
         ],
         imports: [
             platform_browser_1.BrowserModule.withServerTransition({
@@ -299,7 +300,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"col-sm\">\n    {{devices | async}}\n  </div>\n  <div class=\"col-sm\">\n    Home Works!\n  </div>\n</div>"
+module.exports = "<!-- <div class=\"row\">\n  <div class=\"col-sm\">\n    <div class=\"form-group\">\n      <label for=\"typeahead-http\">Search for a device:</label>\n      <input id=\"typeahead-http\" type=\"text\" class=\"form-control\" [class.is-invalid]=\"searchFailed\" [(ngModel)]=\"model\" [ngbTypeahead]=\"search\"\n        placeholder=\"Wikipedia search\" />\n      <span *ngIf=\"searching\">searching...</span>\n      <div class=\"invalid-feedback\" *ngIf=\"searchFailed\">Sorry, suggestions could not be loaded.</div>\n    </div>\n\n    <hr>\n    <pre>Model: {{ model | json }}</pre>\n  </div>\n</div> -->\n<div class=\"row\">\n  <div class=\"col-sm\">\n    <table class=\"table table-inverse\">\n      <thead>\n        <tr>\n          <th>ID</th>\n          <th>Name</th>\n          <th>Type</th>\n          <th>Last Event On</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th scope=\"row\">1</th>\n          <td>Mark</td>\n          <td>Otto</td>\n          <td>@mdo</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">2</th>\n          <td>Jacob</td>\n          <td>Thornton</td>\n          <td>@fat</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">3</th>\n          <td>Larry</td>\n          <td>the Bird</td>\n          <td>@twitter</td>\n        </tr>\n      </tbody>\n    </table>\n    <pre>Devices: {{ devices | json }}</pre>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -325,9 +326,10 @@ var HomeComponent = (function () {
         this.DeviceService = DeviceService;
     }
     HomeComponent.prototype.ngOnInit = function () {
-        this.devices = this.DeviceService.getDevices()
-            .map(function (devices) {
-            return devices.map(function (d) { return d.id + " - " + d.title + " (" + d.author + ")"; }).join(',');
+        var _this = this;
+        this.DeviceService.getDevices()
+            .subscribe(function (data) {
+            _this.devices = data;
         });
     };
     return HomeComponent;
@@ -363,13 +365,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("@angular/core");
 var transfer_http_1 = __webpack_require__("../../../../../src/modules/transfer-http/transfer-http.ts");
-var urlBase = 'http://localhost:8000';
 var DeviceService = (function () {
     function DeviceService(http) {
         this.http = http;
     }
     DeviceService.prototype.getDevices = function () {
-        return this.http.get(urlBase + "/api/devices");
+        return this.http.get("/api/devices");
     };
     return DeviceService;
 }());
@@ -380,6 +381,36 @@ DeviceService = __decorate([
 exports.DeviceService = DeviceService;
 var _a;
 //# sourceMappingURL=device.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/service/event.service.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("@angular/core");
+var EventService = (function () {
+    function EventService() {
+    }
+    return EventService;
+}());
+EventService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], EventService);
+exports.EventService = EventService;
+//# sourceMappingURL=event.service.js.map
 
 /***/ }),
 
@@ -398,6 +429,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("@angular/core");
 var common_1 = __webpack_require__("@angular/common");
 var device_service_1 = __webpack_require__("../../../../../src/app/service/device.service.ts");
+var event_service_1 = __webpack_require__("../../../../../src/app/service/event.service.ts");
 var ServiceModule = (function () {
     function ServiceModule() {
     }
@@ -409,7 +441,7 @@ ServiceModule = __decorate([
             common_1.CommonModule
         ],
         declarations: [],
-        providers: [device_service_1.DeviceService]
+        providers: [device_service_1.DeviceService, event_service_1.EventService]
     })
 ], ServiceModule);
 exports.ServiceModule = ServiceModule;
@@ -449,7 +481,7 @@ routes_1.ROUTES.forEach(function (route) {
         console.time("GET: " + req.originalUrl);
         res.render('../dist/index', {
             req: req,
-            res: res
+            res: res,
         });
         console.timeEnd("GET: " + req.originalUrl);
     });
@@ -507,6 +539,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("@angular/core");
 var http_1 = __webpack_require__("@angular/http");
@@ -516,7 +551,8 @@ __webpack_require__("rxjs/add/operator/map");
 __webpack_require__("rxjs/add/operator/do");
 __webpack_require__("rxjs/add/observable/fromPromise");
 var TransferHttp = (function () {
-    function TransferHttp(http, transferState) {
+    function TransferHttp(originUrl, http, transferState) {
+        this.originUrl = originUrl;
         this.http = http;
         this.transferState = transferState;
     }
@@ -595,11 +631,18 @@ var TransferHttp = (function () {
         if (typeof uri !== 'string') {
             url = uri.url;
         }
-        var key = url + JSON.stringify(options);
+        var absoluteUrl = "" + this.originUrl + url;
+        var key = absoluteUrl + JSON.stringify(options);
         try {
             return this.resolveData(key);
         }
         catch (e) {
+            if (typeof uri === 'string') {
+                uri = absoluteUrl;
+            }
+            else {
+                uri.url = absoluteUrl;
+            }
             return callback(uri, options)
                 .map(function (res) { return res.json(); })
                 .do(function (data) {
@@ -642,7 +685,8 @@ var TransferHttp = (function () {
 }());
 TransferHttp = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [typeof (_a = typeof http_1.Http !== "undefined" && http_1.Http) === "function" && _a || Object, typeof (_b = typeof transfer_state_1.TransferState !== "undefined" && transfer_state_1.TransferState) === "function" && _b || Object])
+    __param(0, core_1.Inject('ORIGIN_URL')),
+    __metadata("design:paramtypes", [String, typeof (_a = typeof http_1.Http !== "undefined" && http_1.Http) === "function" && _a || Object, typeof (_b = typeof transfer_state_1.TransferState !== "undefined" && transfer_state_1.TransferState) === "function" && _b || Object])
 ], TransferHttp);
 exports.TransferHttp = TransferHttp;
 var _a, _b;

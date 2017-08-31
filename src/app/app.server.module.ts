@@ -28,7 +28,8 @@ export function onBootstrap(appRef: ApplicationRef, transferState: TransferState
         ApplicationRef,
         TransferState
       ]
-    }
+    },
+    { provide: 'ORIGIN_URL', useValue: 'http://localhost:8000' }
   ],
   imports: [
     BrowserModule.withServerTransition({

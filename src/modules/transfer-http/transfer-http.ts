@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { ConnectionBackend, Http, Request, RequestOptions, RequestOptionsArgs, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
@@ -10,7 +10,7 @@ import 'rxjs/add/observable/fromPromise';
 
 @Injectable()
 export class TransferHttp {
-  constructor(private http: Http, protected transferState: TransferState) {}
+  constructor(@Inject('ORIGIN_URL') private originUrl: string, private http: Http, protected transferState: TransferState) {}
 
   request(uri: string | Request, options?: RequestOptionsArgs): Observable<any> {
     return this.getData(uri, options, (url: string, options: RequestOptionsArgs) => {
@@ -79,15 +79,20 @@ export class TransferHttp {
     let url = uri;
 
     if (typeof uri !== 'string') {
-      url = uri.url
+      url = uri.url;
     }
+    const absoluteUrl = `${this.originUrl}${url}`;
 
-    const key = url + JSON.stringify(options)
+    const key = absoluteUrl + JSON.stringify(options);
 
     try {
       return this.resolveData(key);
-
     } catch (e) {
+      if (typeof uri === 'string') {
+        uri = absoluteUrl;
+      } else {
+        uri.url = absoluteUrl;
+      }
       return callback(uri, options)
         .map(res => res.json())
         .do(data => {

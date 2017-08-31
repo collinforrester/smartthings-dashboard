@@ -24,13 +24,12 @@ app.set('view engine', 'html');
 app.set('views', 'src');
 
 app.use('/', express.static('dist', { index: false }));
-
 ROUTES.forEach(route => {
   app.get(route, (req, res) => {
     console.time(`GET: ${req.originalUrl}`);
     res.render('../dist/index', {
       req: req,
-      res: res
+      res: res,
     });
     console.timeEnd(`GET: ${req.originalUrl}`);
   });

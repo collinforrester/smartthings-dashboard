@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { TransferHttp } from '../../modules/transfer-http/transfer-http';
-
-const urlBase = 'http://localhost:8000';
+import { Request } from 'express';
+import { REQUEST } from '@nguniversal/express-engine/tokens';
 
 @Injectable()
 export class DeviceService {
@@ -9,6 +9,6 @@ export class DeviceService {
   constructor(private http: TransferHttp) { }
 
   getDevices() {
-    return this.http.get(`${urlBase}/api/devices`);
+    return this.http.get(`/api/devices`);
   }
 }

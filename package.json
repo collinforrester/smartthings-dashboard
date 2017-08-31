@@ -5,11 +5,11 @@
   "scripts": {
     "ng": "ng",
     "serve": "npm-run-all --parallel serve:*",
-    "serve:browser": "ng serve -app 0",
+    "serve:browser": "ng serve -app 0 --proxy-config proxy.conf.json",
     "serve:server": "nodemon --watch src --watch dist dist-server/main.bundle.js",
     "serve:json-server": "json-server --watch src/api/db.json",
     "preserve:server": "npm run build",
-    "start": "npm run serve:server",
+    "start": "npm run serve",
     "build": "npm-run-all --parallel build:*",
     "build:server": "ng build -app 1",
     "build:browser": "ng build -app 0",

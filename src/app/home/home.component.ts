@@ -1,3 +1,4 @@
+import { ISmartThingDevice } from './../ismart-thing-device';
 import { Observable } from 'rxjs/Observable';
 import { DeviceService } from './../service/device.service';
 import { Component, OnInit } from '@angular/core';
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public devices: Observable<string>;
+  public devices: Observable<ISmartThingDevice>;
   constructor(private DeviceService: DeviceService) { }
 
   ngOnInit() {
-    this.devices = this.DeviceService.getDevices()
-      .map(devices => {
-        return devices.map(d => `${d.id} - ${d.title} (${d.author})`).join(',');
+    this.DeviceService.getDevices()
+      .subscribe(data => {
+        this.devices = data;
       });
   }
 

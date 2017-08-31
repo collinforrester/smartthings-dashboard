@@ -7,6 +7,9 @@ import { BrowserTransferStateModule } from '../modules/transfer-state/browser-tr
 
 @NgModule({
   bootstrap: [ AppComponent ],
+  providers: [
+    { provide: 'ORIGIN_URL', useValue: location.origin }
+  ],
   imports: [
     BrowserModule.withServerTransition({
       appId: 'smartthings'
