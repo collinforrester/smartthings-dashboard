@@ -7,10 +7,6 @@ import { TransferState } from '../modules/transfer-state/transfer-state';
 import { ServerPrebootModule, PREBOOT_RECORD_OPTIONS } from 'preboot/server';
 import { BrowserModule } from '@angular/platform-browser';
 
-export function onPrebootClick() {
-  console.log('[oreboot]: recorded click event on body.');
-}
-
 export function onBootstrap(appRef: ApplicationRef, transferState: TransferState) {
   return () => {
     appRef.isStable

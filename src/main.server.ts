@@ -12,7 +12,6 @@ import { enableProdMode } from '@angular/core';
 import * as jsonServer from 'json-server';
 enableProdMode();
 const app = express();
-const api = new App();
 const port = 8000;
 const baseUrl = `http://localhost:${port}`;
 
