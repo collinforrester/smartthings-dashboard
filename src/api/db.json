@@ -52,7 +52,7 @@
     "name": "Shauna's iPhone",
     "type": "Mobile Presence",
     "location": "Home",
-    "networkId": "shauna.forrester1@gmail.com|5d8e8832-027f-4fd7-b36b-94394fd21d16|2AB7E32E-3C64-4C5A-9A01-A84442571A02",
+    "networkId": "5d8e8832-027f-4fd7-b36b-94394fd21d16|2AB7E32E-3C64-4C5A-9A01-A84442571A02",
     "status": "ACTIVE",
     "executionLocation": "Cloud"
   },
