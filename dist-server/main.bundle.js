@@ -109,7 +109,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"navbar navbar-light navbar-fixed-top navbar-expand-lg\">\n\n  <a class=\"navbar-brand\" [routerLink]=\"['/']\" (click)=\"navbarCollapsed = true\">SmartThings</a>\n\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" (click)=\"navbarCollapsed = !navbarCollapsed\"\n          [attr.aria-expanded]=\"!navbarCollapsed\" aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse\" [ngbCollapse]=\"navbarCollapsed\" id=\"navbarContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/devices']\" (click)=\"navbarCollapsed = true\">Devices</a>\n      </li>\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\" (click)=\"navbarCollapsed = true\">About</a>\n      </li>\n    </ul>\n  </div>\n</header>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
+module.exports = "<header class=\"navbar navbar-light navbar-fixed-top navbar-expand-lg navbar-dark bg-dark\">\n\n  <a class=\"navbar-brand\" [routerLink]=\"['/']\" (click)=\"navbarCollapsed = true\">SmartThings</a>\n\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" (click)=\"navbarCollapsed = !navbarCollapsed\"\n          [attr.aria-expanded]=\"!navbarCollapsed\" aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse\" [ngbCollapse]=\"navbarCollapsed\" id=\"navbarContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/events']\" (click)=\"navbarCollapsed = true\">Events</a>\n      </li>\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/devices']\" (click)=\"navbarCollapsed = true\">Devices</a>\n      </li>\n      <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\" (click)=\"navbarCollapsed = true\">About</a>\n      </li>\n    </ul>\n  </div>\n</header>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
@@ -127,22 +127,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("@angular/core");
 var transfer_state_1 = __webpack_require__("../../../../../src/modules/transfer-state/transfer-state.ts");
 var transfer_http_1 = __webpack_require__("../../../../../src/modules/transfer-http/transfer-http.ts");
+var common_1 = __webpack_require__("@angular/common");
 var AppComponent = (function () {
-    function AppComponent(http, cache) {
+    function AppComponent(platformId, http, cache) {
+        this.platformId = platformId;
         this.http = http;
         this.cache = cache;
         this.title = 'app';
     }
     AppComponent.prototype.ngOnInit = function () {
         this.cache.set('cached', true);
-        // this.devices = this.http.get('http://localhost:8000/devices')
-        //   .map(devices => {
-        //     return devices.map(d => `${d.id} - ${d.title} (${d.author})`).join(',');
-        //   });
+        if (common_1.isPlatformBrowser(this.platformId)) {
+            console.log('[AppComponent]: executing in browser.');
+        }
+        else {
+            console.log('[AppComponent]: executing on server.');
+        }
     };
     return AppComponent;
 }());
@@ -152,7 +159,8 @@ AppComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof transfer_http_1.TransferHttp !== "undefined" && transfer_http_1.TransferHttp) === "function" && _a || Object, typeof (_b = typeof transfer_state_1.TransferState !== "undefined" && transfer_state_1.TransferState) === "function" && _b || Object])
+    __param(0, core_1.Inject(core_1.PLATFORM_ID)),
+    __metadata("design:paramtypes", [Object, typeof (_a = typeof transfer_http_1.TransferHttp !== "undefined" && transfer_http_1.TransferHttp) === "function" && _a || Object, typeof (_b = typeof transfer_state_1.TransferState !== "undefined" && transfer_state_1.TransferState) === "function" && _b || Object])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 var _a, _b;
@@ -178,6 +186,7 @@ var common_1 = __webpack_require__("@angular/common");
 var app_component_1 = __webpack_require__("../../../../../src/app/app.component.ts");
 var http_1 = __webpack_require__("@angular/http");
 var router_1 = __webpack_require__("@angular/router");
+var forms_1 = __webpack_require__("@angular/forms");
 // import { HomeView } from './home/home-view.component';
 var transfer_http_module_1 = __webpack_require__("../../../../../src/modules/transfer-http/transfer-http.module.ts");
 var home_component_1 = __webpack_require__("../../../../../src/app/home/home.component.ts");
@@ -199,9 +208,11 @@ AppModule = __decorate([
             http_1.HttpModule,
             transfer_http_module_1.TransferHttpModule,
             service_module_1.ServiceModule,
+            forms_1.FormsModule,
             router_1.RouterModule.forRoot([
-                { path: '', component: home_component_1.HomeComponent, pathMatch: 'full' }
-                // { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule'}
+                { path: '', redirectTo: '/events', pathMatch: 'full' },
+                { path: 'events', component: home_component_1.HomeComponent, pathMatch: 'full' },
+                { path: 'devices', loadChildren: './device/device.module#DeviceModule' }
             ]),
             ng_bootstrap_1.NgbModule.forRoot()
         ],
@@ -234,7 +245,12 @@ var server_transfer_state_module_1 = __webpack_require__("../../../../../src/mod
 var app_component_1 = __webpack_require__("../../../../../src/app/app.component.ts");
 var app_module_1 = __webpack_require__("../../../../../src/app/app.module.ts");
 var transfer_state_1 = __webpack_require__("../../../../../src/modules/transfer-state/transfer-state.ts");
+var server_1 = __webpack_require__("preboot/server");
 var platform_browser_1 = __webpack_require__("@angular/platform-browser");
+function onPrebootClick() {
+    console.log('[oreboot]: recorded click event on body.');
+}
+exports.onPrebootClick = onPrebootClick;
 function onBootstrap(appRef, transferState) {
     return function () {
         appRef.isStable
@@ -268,6 +284,14 @@ AppServerModule = __decorate([
             platform_browser_1.BrowserModule.withServerTransition({
                 appId: 'smartthings'
             }),
+            server_1.ServerPrebootModule.recordEvents({
+                appRoot: 'app-root',
+                eventSelectors: [{
+                        selector: 'body',
+                        events: ['click'],
+                        freeze: true
+                    }]
+            }),
             platform_server_1.ServerModule,
             server_transfer_state_module_1.ServerTransferStateModule,
             app_module_1.AppModule
@@ -300,7 +324,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"row\">\n  <div class=\"col-sm\">\n    <div class=\"form-group\">\n      <label for=\"typeahead-http\">Search for a device:</label>\n      <input id=\"typeahead-http\" type=\"text\" class=\"form-control\" [class.is-invalid]=\"searchFailed\" [(ngModel)]=\"model\" [ngbTypeahead]=\"search\"\n        placeholder=\"Wikipedia search\" />\n      <span *ngIf=\"searching\">searching...</span>\n      <div class=\"invalid-feedback\" *ngIf=\"searchFailed\">Sorry, suggestions could not be loaded.</div>\n    </div>\n\n    <hr>\n    <pre>Model: {{ model | json }}</pre>\n  </div>\n</div> -->\n<div class=\"row\">\n  <div class=\"col-sm\">\n    <table class=\"table table-inverse\">\n      <thead>\n        <tr>\n          <th>ID</th>\n          <th>Name</th>\n          <th>Type</th>\n          <th>Last Event On</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th scope=\"row\">1</th>\n          <td>Mark</td>\n          <td>Otto</td>\n          <td>@mdo</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">2</th>\n          <td>Jacob</td>\n          <td>Thornton</td>\n          <td>@fat</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">3</th>\n          <td>Larry</td>\n          <td>the Bird</td>\n          <td>@twitter</td>\n        </tr>\n      </tbody>\n    </table>\n    <pre>Devices: {{ devices | json }}</pre>\n  </div>\n</div>\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col-sm\">\n    <br>\n      <form (ngSubmit)=\"onSubmit()\" class=\"form-inline\">\n        <label for=\"query\" class=\"mr-sm-2\">Search</label>\n        <input required [(ngModel)]=\"query\" type=\"text\" name='query' class=\"form-control mb-2 mr-sm-2 mb-sm-0\" id=\"query\" placeholder=\"Event text\">\n        <button type=\"submit\" class=\"mr-sm-1 btn btn-primary\">Search</button>\n        <button (click)=\"clear()\" class=\"btn btn-secondary\">Clear</button>\n      </form>\n      <br>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-sm\">\n    <table class=\"table\">\n      <thead>\n        <tr>\n          <th>ID</th>\n          <th>Name</th>\n          <th>Value</th>\n          <th>Text</th>\n          <th>Date</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let event of events, let i = index\">\n          <th scope=\"row\">{{i + 1}}</th>\n          <td>{{event.name}}</td>\n          <td>{{event.value}}</td>\n          <td>{{event.text}}</td>\n          <td>{{event.date | date:'short'}}</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -319,18 +343,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var device_service_1 = __webpack_require__("../../../../../src/app/service/device.service.ts");
+var event_service_1 = __webpack_require__("../../../../../src/app/service/event.service.ts");
 var core_1 = __webpack_require__("@angular/core");
+var router_1 = __webpack_require__("@angular/router");
 var HomeComponent = (function () {
-    function HomeComponent(DeviceService) {
-        this.DeviceService = DeviceService;
+    function HomeComponent(EventService, router, activatedRoute) {
+        this.EventService = EventService;
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.queryKey = 'q';
+        this.query = '';
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.DeviceService.getDevices()
-            .subscribe(function (data) {
-            _this.devices = data;
+        this.activatedRoute
+            .queryParams
+            .subscribe(function (params) {
+            if (params[_this.queryKey]) {
+                _this.query = params[_this.queryKey];
+            }
         });
+        this.search();
+    };
+    HomeComponent.prototype.clear = function () {
+        this.query = '';
+    };
+    HomeComponent.prototype.search = function () {
+        var _this = this;
+        this.EventService.getEvents({
+            query: this.query
+        })
+            .subscribe(function (data) {
+            _this.events = data;
+        });
+    };
+    HomeComponent.prototype.onSubmit = function () {
+        var queryParams = {};
+        queryParams[this.queryKey] = this.query;
+        this.router.navigate(['events'], { queryParams: queryParams });
+        this.search();
     };
     return HomeComponent;
 }());
@@ -340,10 +391,10 @@ HomeComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof device_service_1.DeviceService !== "undefined" && device_service_1.DeviceService) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof event_service_1.EventService !== "undefined" && event_service_1.EventService) === "function" && _a || Object, typeof (_b = typeof router_1.Router !== "undefined" && router_1.Router) === "function" && _b || Object, typeof (_c = typeof router_1.ActivatedRoute !== "undefined" && router_1.ActivatedRoute) === "function" && _c || Object])
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
-var _a;
+var _a, _b, _c;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
@@ -400,16 +451,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("@angular/core");
+var transfer_http_1 = __webpack_require__("../../../../../src/modules/transfer-http/transfer-http.ts");
 var EventService = (function () {
-    function EventService() {
+    function EventService(http) {
+        this.http = http;
     }
+    EventService.prototype.getEvents = function (options) {
+        if (options === void 0) { options = { query: '' }; }
+        return this.http
+            .get("/api/events?q=" + options.query + "&_sort=date&_order=desc&_limit=25");
+    };
     return EventService;
 }());
 EventService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof transfer_http_1.TransferHttp !== "undefined" && transfer_http_1.TransferHttp) === "function" && _a || Object])
 ], EventService);
 exports.EventService = EventService;
+var _a;
 //# sourceMappingURL=event.service.js.map
 
 /***/ }),
@@ -631,6 +690,7 @@ var TransferHttp = (function () {
         if (typeof uri !== 'string') {
             url = uri.url;
         }
+        console.log(uri, url);
         var absoluteUrl = "" + this.originUrl + url;
         var key = absoluteUrl + JSON.stringify(options);
         try {
@@ -864,7 +924,8 @@ exports.TransferState = TransferState;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ROUTES = [
     '/',
-    '/lazy',
+    '/events',
+    '/devices',
     '/home'
 ];
 //# sourceMappingURL=routes.js.map
@@ -976,6 +1037,13 @@ module.exports = require("@angular/core");
 
 /***/ }),
 
+/***/ "@angular/forms":
+/***/ (function(module, exports) {
+
+module.exports = require("@angular/forms");
+
+/***/ }),
+
 /***/ "@angular/http":
 /***/ (function(module, exports) {
 
@@ -1029,6 +1097,13 @@ module.exports = require("express");
 /***/ (function(module, exports) {
 
 module.exports = require("json-server");
+
+/***/ }),
+
+/***/ "preboot/server":
+/***/ (function(module, exports) {
+
+module.exports = require("preboot/server");
 
 /***/ }),
 

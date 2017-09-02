@@ -4,13 +4,16 @@ import { ServerTransferStateModule } from '../modules/transfer-state/server-tran
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 import { TransferState } from '../modules/transfer-state/transfer-state';
+import { ServerPrebootModule, PREBOOT_RECORD_OPTIONS } from 'preboot/server';
 import { BrowserModule } from '@angular/platform-browser';
+
+export function onPrebootClick() {
+  console.log('[oreboot]: recorded click event on body.');
+}
 
 export function onBootstrap(appRef: ApplicationRef, transferState: TransferState) {
   return () => {
     appRef.isStable
-      // .filter(stable => stable)
-      // .first()
       .subscribe(() => {
         transferState.inject();
       });
@@ -34,6 +37,14 @@ export function onBootstrap(appRef: ApplicationRef, transferState: TransferState
   imports: [
     BrowserModule.withServerTransition({
       appId: 'smartthings'
+    }),
+    ServerPrebootModule.recordEvents({
+      appRoot: 'app-root',
+      eventSelectors: [{
+        selector: 'body',
+        events: ['click'],
+        freeze: true
+      }]
     }),
     ServerModule,
     ServerTransferStateModule,

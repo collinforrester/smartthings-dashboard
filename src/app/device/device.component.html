@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Execution</th>
+          <th>Status</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let device of devices, let i = index">
+          <th scope="row">{{i + 1}}</th>
+          <td>{{device.name}}</td>
+          <td>{{device.location}}</td>
+          <td>{{device.executionLocation}}</td>
+          <td>{{device.status}}</td>
+          <td>{{device.type}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

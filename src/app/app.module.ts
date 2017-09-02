@@ -4,7 +4,7 @@ import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-// import { HomeView } from './home/home-view.component';
+import { FormsModule } from '@angular/forms';
 import { TransferHttpModule } from '../modules/transfer-http/transfer-http.module';
 import { HomeComponent } from './home/home.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -13,16 +13,17 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     HomeComponent
-    // HomeView
   ],
   imports: [
     CommonModule,
     HttpModule,
     TransferHttpModule,
     ServiceModule,
+    FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full'}
-      // { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule'}
+      { path: '', redirectTo: '/events', pathMatch: 'full'},
+      { path: 'events', component: HomeComponent, pathMatch: 'full'},
+      { path: 'devices', loadChildren: './device/device.module#DeviceModule'}
     ]),
     NgbModule.forRoot()
   ],

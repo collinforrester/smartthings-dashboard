@@ -86,13 +86,16 @@ export class TransferHttp {
     const key = absoluteUrl + JSON.stringify(options);
 
     try {
-      return this.resolveData(key);
+      const response = this.resolveData(key);
+      console.log('[cached]: ', url);
+      return response;
     } catch (e) {
       if (typeof uri === 'string') {
         uri = absoluteUrl;
       } else {
         uri.url = absoluteUrl;
       }
+      console.log('[fetched]: ', url);
       return callback(uri, options)
         .map(res => res.json())
         .do(data => {
