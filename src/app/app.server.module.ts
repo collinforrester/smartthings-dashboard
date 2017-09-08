@@ -35,12 +35,12 @@ export function onBootstrap(appRef: ApplicationRef, transferState: TransferState
       appId: 'smartthings'
     }),
     ServerPrebootModule.recordEvents({
-      appRoot: 'app-root',
-      eventSelectors: [{
-        selector: 'body',
-        events: ['click'],
-        freeze: true
-      }]
+      appRoot: 'app-root'
+      // eventSelectors: [{
+      //   selector: 'body',
+      //   events: ['click'],
+      //   freeze: true
+      // }]
     }),
     ServerModule,
     ServerTransferStateModule,

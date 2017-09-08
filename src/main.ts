@@ -7,4 +7,7 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-platformBrowserDynamic().bootstrapModule(AppBrowserModule);
+const delay = 5000;
+setTimeout(() => {
+  platformBrowserDynamic().bootstrapModule(AppBrowserModule);
+}, delay);
